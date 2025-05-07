@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #22304a; /* light blue */
+}
+.text-text{
+  color: #334dcf;
+}
+.h-2\.5 {
+  height: calc(var(--spacing) * 2.5);
+}
+.w-4 {
+  width: calc(var(--spacing) * 4);
+}
+.__className_2aa964 {
+  font-weight: 900;
+}
+:root {
+  --color-amber-300: oklch(.879 .169 91.605);
+  --color-cyan-50: oklch(.984 .019 200.873);
+  --color-gray-200: oklch(.928 .006 264.531);
+  --color-gray-300: oklch(.872 .01 258.338);
+  --color-gray-600: oklch(.446 .03 256.802);
+  --color-black: #000;
+  --color-white: #fff;
+  --spacing: .25rem;
+  --text-xs: .75rem;
+  --text-xs--line-height: calc(1 / .75);
+  --text-sm: .875rem;
+  --text-sm--line-height: calc(1.25 / .875);
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1;
+  --text-6xl: 3.75rem;
+  --text-6xl--line-height: 1;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  --tracking-tighter: -.05em;
+  --leading-tight: 1.25;
+  --radius-lg: .5rem;
+  --radius-xl: .75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+  --ease-out: cubic-bezier(0,0,.2,1);
+  --ease-in-out: cubic-bezier(.4,0,.2,1);
+  --default-transition-duration: .15s;
+  --default-transition-timing-function: cubic-bezier(.4,0,.2,1);
+  --default-font-family: var(--font-geist-sans);
+  --default-mono-font-family: var(--font-geist-mono);
+}
+
+.text-xs{
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading,var(--text-xs--line-height));
+}
+.sidebar-enter {
+  transform: translateX(100%);
+}
+.sidebar-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+.sidebar-exit {
+  transform: translateX(0);
+}
+.sidebar-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+/* Add this to your existing CSS */
+video {
+  transition: transform 0.3s ease;
+}
+
+.video-container:hover video {
+  transform: scale(1.05);
+}
