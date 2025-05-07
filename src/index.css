@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background-color: #22304a; /* light blue */
+  background-color: #22304a; 
 }
 .text-text{
   color: #334dcf;
