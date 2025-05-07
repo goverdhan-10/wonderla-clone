@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="App">
         <FloatingNavbar />
-        <div className="pt-20 mt-10"> {/* Add padding to account for fixed navbar */}
+        <div className="pt-20 mt-10"> 
           <Routes>
             <Route path="/" element={<RidesSection />} />
             <Route path="/rides/:city/:rideName" element={<RideDetailsPage />} />
