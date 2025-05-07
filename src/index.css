@@ -76,7 +76,7 @@ body {
   transform: translateX(100%);
   transition: transform 300ms ease-in-out;
 }
-/* Add this to your existing CSS */
+
 video {
   transition: transform 0.3s ease;
 }
